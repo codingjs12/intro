@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>온라인 프로필</title>
+	<meta charset="utf-8">
+  <style>
+    table {
+      border:1px solid #222; 
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    thead {
+      background: cornflowerblue;  
+    }
+
+    th, td {
+      border:1px solid #ccc; 
+      
+      padding:5px;  
+      font-size:0.8em; 
+    }
+
+
+    .subtitle {
+        color: blue;
+        text-shadow: 5px 5px 10px blue;
+    }
+
+    .side {
+        width: 400px;
+        height: 700px;
+        background-color: cornflowerblue;
+        float: left;
+        color: white;
+        border-radius: 10px;
+    }
+
+    #container {
+        width: 1200px;
+        margin: 10px auto;
+
+    }
+
+    #namecard {
+        width: 100%;
+        float: left;
+        padding: 10px 50px;
+
+    }
+
+    #sns {
+        width: 200px;
+        float: left;
+        padding: 0px 50px;
+       
+    }
+
+    #detail {
+        padding: 0px 50px;
+
+    }
+
+    #contents {
+        width: 550px;
+        height: 700px;
+        background-color: lightskyblue;
+        float: left;
+        margin: auto;
+        padding: 0px 50px;
+        border-radius: 10px;
+    }
+
+    #timer {
+        width: 100px;
+        height: 100px;
+        padding: 0px 500px;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+
+    img:hover {
+        transform: rotate(360deg);
+        transition:3s;
+    }
+
+    body {
+        background-image: url("images/01.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+  </style>
+</head>
+
+<body>
+    <div id="container">
+        <!-- 사이드바 -->
+        <div class="side">
+            <div id="namecard">
+                <img src="images/me.jpg" alt="">
+                <h1><span style="color: blue;">강</span>재석</h1>    
+                <p>프로그래밍 재밌다</p>
+            </div>
+            <div id="detail">
+                <p>Ansan, Korea</p>
+                <p>kjsbest007@naver.com</p>                                 
+            </div>
+            <div id="sns">
+                <h2>SNS</h2>
+                <h3><a href="index.html">홈으로</a></h3>
+            </div>           
+        </div>
+        <div id="contents">
+            <section style="border-bottom: 2px dashed black;">
+                <h2 class="subtitle">자기소개</h2>
+                <p><mark>프로그래밍</mark>에 관심이 많습니다. <br>현재 열심히 공부하며 코딩 중!</p>
+            </section>
+
+            <!-- 경력 -->
+            <section style="border-bottom: 2px dashed black;">
+                <h2 class="subtitle">Experience</h2>
+                <ul>
+                    <li>프론트엔드
+                        <ul>
+                            <li>HTML/CSS/JAVASCRIPT </li>
+                        </ul>
+                    </li>
+                    <li>백엔드
+                        <ul>
+                            <li>자바</li>
+                            <li>오라클</li>
+                            <li>파이썬</li>
+                            <li>C, C++, C#</li>
+                        </ul>                        
+                    </li>
+                </ul>             
+            </section>
+
+            <!-- 숙련도 -->
+            <section style="border-bottom: 2px dashed black;">
+                <h2 class="subtitle">보유 기술</h2>
+                <li style="list-style: none;"> 
+                    <ul>
+                        <li>자바 </li>
+                        <li>오라클</li>
+                    </ul>                        
+                </li>
+            </section>
+
+            <!-- 학력 -->
+            <section>
+                <h2 class="subtitle">Education</h2>
+                <table>
+                  <caption>학력 사항</caption>
+                  <thead>
+                      <tr>
+                          <th>출신학교</th>
+                          <th>전공</th>
+                          <th>기간</th>
+                          <th>구분</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>인하공업전문대학</td>
+                          <td>컴퓨터시스템공학과</td>
+                          <td>2022.3 ~ 2026.2</td>
+                          <td>재학</td>
+                      </tr>
+                      <tr>
+                          <td>안산강서고등학교</td>
+                          <td>이과</td>
+                          <td>20014.3 ~ 2017.2</td>
+                          <td>졸업</td>
+                      </tr>
+                  </tbody>
+                </table>
+            </section>
+        </div>        
+    </div>
+    <div id="timer">
+        <div id="time"></div>
+    </div>
+</body>
+</html>
